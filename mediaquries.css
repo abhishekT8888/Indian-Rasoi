@@ -1,0 +1,12 @@
+@media  screen and (max-width:600px) {
+
+    .nav-links a{
+        display: none;
+    
+    }
+
+    .nav-links i{
+        display: flex;
+    }
+    
+}

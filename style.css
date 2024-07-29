@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:wght@300;400;500;600&display=swap');
+body{
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* navigation style */
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh;
+}
+
+.logo{
+    width: 250px;
+    height: 150px;
+    border-radius: 50px;
+}
+
+nav ,
+.nav-links{
+    display: flex;
+}
+
+.nav-links{
+    gap:2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #F8E559;
+    text-underline-offset: 0.7rem;
+    transition: all 300ms ease;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 0 0 10px black;
+    font-weight: bold;
+}
+#desktop-navigation i{
+    font-size: 8vw;
+    color: white;
+    text-shadow: 0 0 3px #000;
+    font-weight: 900;
+    display: none;
+    cursor: pointer;
+}
+
+
+#desktop-navigation{
+    /* background-color: #80BCBD; */
+    background-color: lightseagreen;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.restaurant-home-container{
+    display: flex;
+    min-height: 100vh;
+    background-image: url(./assets/ir.png);
+    background-size: cover;
+    width: auto;
+    height: 900px;
+    color: aliceblue;
+    /* filter: blur(3px); */
+    
+}
+
+
+.tagline-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 800px;
+    gap: 2rem;
+    top: 30%;
+    padding: 2rem;
+    padding-top: 5rem;
+    z-index: 1;
+}
+
+.tagline-container h1{
+    text-align: left;
+    font-weight: 600;
+    font-size: 6vw;
+    text-shadow: 2px 2px 10px black;
+}
+
+.tagline-container p{
+    text-align: left;
+    font-size: 2vw;
+    height: 60%;
+    text-shadow: 2px 2px 10px black;
+    font-weight: 900;
+    margin-top: 1.5rem;
+}
+.booking-btn-2{
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.booking-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.dish-photo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-photo{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 30px black;
+
+    
+}
+
+/* Service-container */
+#Service{
+    margin-top: 5rem;
+}
+
+.Service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    text-align: center;
+
+}
+
+.Service-div{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+.icon{
+    width: 50%;
+    height: 50%;
+}
+
+#Service h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.Service-div h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Service-div p{
+    font-size: 1rem;
+    font-family: 'Happy Monkey', system-ui;
+}
+
+
+
+/* About-container */
+.About-container{
+    margin-left: 10px;
+    margin-top: 4rem;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.About-container{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.About-image1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.About-image{
+    width: 100%;
+    height: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    
+}
+
+.About-text{
+    margin-top: 180px;
+    margin-right: 20px;
+    font-size: 3vh;
+
+}
+#About h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+
+
+/* form styling */
+
+
+
+  /* Styles for form container */
+  .form-container {
+    width: 100%;
+    height: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Styles for form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Styles for form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+    font-size: 16px;
+}
+
+/* Styles for submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 100px;
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+
+.socials a {
+    color: #fff; 
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+@media (max-width:600px){
+    .nav-links a{
+        display: none;
+    }
+    .nav-div button{
+        display: none;
+    }
+
+    #desktop-navigation i{
+        display: flex;
+    }
+    .dish-photo{
+        display: none;
+    }
+    .tagline-container{
+        display: flex;
+        align-items: center;   
+    }
+
+    .tagline-container h1{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;   
+    }
+    .About-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .About-image1{
+        width: 80%;
+        height: 40%;
+    }
+    .About-text{
+        width: 80%;
+        height: 40%;
+        padding: 20px;
+        padding-left: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2px;
+    }
+}
+
+/* Menu */
+
+.micon{
+    width: 200px;
+    height: 200px;
+}
